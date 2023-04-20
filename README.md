@@ -38,6 +38,12 @@ Time to be creative, and efficient. Do what you think would be the best for your
 
 Send us the project and answer to those simple questions : 
 - What bugs did you find ? How did you solve these and why ? 
+1- username needs to be name (found out from the first object which contains that value)
+2-handleChange needs to be onClick found out by the unresponsive update button
+3-project is an array which means we need to access the object inside, found out from the error log and the data console.
 - Which feature did you develop and why ? 
+i did not develop a feature since i am not familiar with web developement and there was no time left
 - Do you have any feedback about the code / architecture of the project and what was the difficulty you encountered while doing it ? 
+the code in undocumented( no comments ), the quality and the architecture are alright .
+
 

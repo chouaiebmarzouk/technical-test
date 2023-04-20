@@ -108,10 +108,10 @@ const Create = () => {
               initialValues={{}}
               onSubmit={async (values, { setSubmitting }) => {
                 try {
-                  values.status = "active";
-                  values.availability = "not available";
-                  values.role = "ADMIN";
-                  const res = await api.post("/user", values);
+                  // values.status = "active";
+                  // values.availability = "not available";
+                  // values.role = "ADMIN";
+                  const res = await api.post("/user", {...values,name:values.username});
                   if (!res.ok) throw res;
                   toast.success("Created!");
                   setOpen(false);
