@@ -110,10 +110,14 @@ const Create = () => {
                 try {
                   // values.status = "active";
                   // values.availability = "not available";
+                  
                   // values.role = "ADMIN";
+                  
                   const res = await api.post("/user", {...values,name:values.username});
+                 
                   if (!res.ok) throw res;
                   toast.success("Created!");
+                  
                   setOpen(false);
                   history.push(`/user/${res.data._id}`);
                 } catch (e) {
@@ -148,7 +152,10 @@ const Create = () => {
                   <LoadingButton
                     className="mt-[1rem]  bg-[#0560FD] text-[16px] font-medium text-[#FFFFFF] py-[12px] px-[22px] rounded-[10px]"
                     loading={isSubmitting}
-                    onClick={handleSubmit}>
+                    onClick={handleSubmit} 
+                 
+                   
+                    >
                     Save
                   </LoadingButton>
                 </React.Fragment>
